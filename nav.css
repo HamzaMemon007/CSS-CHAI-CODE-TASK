@@ -1,0 +1,94 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: sans-serif;
+    color: white;
+    background-image: url("./assets/background\ img.png");
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* width: 100vw; */
+    margin: 1em;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+
+        li {
+            list-style-type: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+    }
+
+    .btn button{
+        padding: 0.5em 1em;
+        background-color: #003465;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        transition: 0.4s;
+    }
+
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.drop-this{
+    transition: 0.3s;
+}
+
+.drop-this:hover .drop-list{
+    display: flex;
+    flex-direction: column;
+    min-height: 120px;
+    align-items: center;
+    gap: 8px;
+}
+
+.drop-list{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    max-width: 130px;
+    width: 93.8px;
+    border-radius: 11px;
+    background-color: white;
+    a{
+        text-decoration: none;
+        border-radius: 10px;
+        color: black;
+        background-color: whitesmoke;
+        width: 70px;
+        text-align: center;
+        padding: 6px;
+        margin: 3px;
+        transition: 0.3s;
+    }
+
+}
+
+.drop-list a:hover{
+    background-color:#003465;
+    color: white;
+    transform: scale(1.1);
+}
+
