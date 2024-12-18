@@ -53,7 +53,7 @@ header {
 }
 
 .drop-this{
-    transition: 0.3s;
+    transition: 0.31s;
 }
 
 .drop-this:hover .drop-list{
